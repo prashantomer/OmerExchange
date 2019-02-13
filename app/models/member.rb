@@ -25,7 +25,7 @@ class Member < ApplicationRecord
         # member.image = auth.info.image # assuming the member model has an image
         # If you are using confirmable and the provider(s) you use validate emails, 
         # uncomment the line below to skip the confirmation emails.
-        # member.skip_confirmation!
+        member.skip_confirmation!
       end
     end
   end
