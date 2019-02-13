@@ -64,3 +64,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Devise
+gem 'devise'
+# Omniauth
+gem 'omniauth'
+gem 'omniauth-github'
+
+# Letter Opener
+gem "letter_opener"#, :group => :development
+
+# Figaro - env vars
+gem "figaro"
