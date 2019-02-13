@@ -1,0 +1,10 @@
+<h1>Messages#Index</h1>
+<div id="new_message">
+  <%= form_for @message do |f| %>
+    <%= f.text_field :message %>
+    <%#= f.submit %>
+  <% end %>
+</div>
+<div id="all_messages">
+  <%= render @messages %>
+</div>
