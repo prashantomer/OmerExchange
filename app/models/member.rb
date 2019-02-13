@@ -18,7 +18,6 @@ class Member < ApplicationRecord
 
   class << self
     def from_omniauth(auth)
-      debugger
       where(oauth_provider: auth.provider, oauth_uid: auth.uid).first_or_create do |member|
         member.email = auth.info.email
         member.password = Devise.friendly_token[0, 20]
